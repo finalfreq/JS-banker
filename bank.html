@@ -9,10 +9,15 @@
   </head>
   <body>
     <div class="container">
-      <h1 class="page-header text-center">Bank</h1>
+      <div class="row">
+        <div class="col-sm-8 col-sm-offset-2">
+          <h1 class="page-header text-center">Bank of the Internets</h1>
+        </div>
+      </div>
       <div class="row">
         <div class="account-create">
           <div class="col-sm-4 col-sm-offset-4 column">
+
             <form id="create-account" class="well">
 
               <h4>Sign up for a bank account:</h4>
@@ -20,8 +25,9 @@
               <div class="form-group">
                 <input id="name" class="form-control" placeholder="Your name" required>
               </div>
-              <div class="form-group">
-                <input id="initial-deposit" class="form-control" placeholder="Initial deposit" type="number" required>
+              <div class="input-group form-group">
+                <div class="input-group-addon">$</div>
+                <input id="initial-deposit" class="form-control" placeholder="Initial deposit" type="number" step="any" required>
               </div>
               <button class="btn btn-primary stretch">Create account</button>
             </form>
@@ -33,18 +39,20 @@
 
               <h4>Make a deposit or withdrawal</h4>
 
-              <div class="form-group">
-                <input id="deposit-amount" class="form-control" placeholder="Deposit amount" type="number" autofocus>
+              <div class="input-group form-group">
+                <div class="input-group-addon">$</div>
+                <input id="deposit-amount" class="form-control" placeholder="Deposit amount" type="number" step="any" autofocus>
               </div>
-              <div class="form-group">
-                <input id="withdrawal-amount" class="form-control" placeholder="Withdrawal amount" type="number">
+              <div class="input-group form-group">
+                <div class="input-group-addon">$</div>
+                <input id="withdrawal-amount" class="form-control" placeholder="Withdrawal amount" type="number" step="any">
               </div>
               <button type="submit" class="btn btn-primary stretch">Submit</button>
             </form>
           </div>
           <div class="col-sm-4 col-sm-offset-1 well">
-            <h1></h1>
-            <p class="lead">Your present balance is: $<span class="balance"> </span> </p>
+            <h3></h3>
+            <p class="lead">Your present balance is: <span class="balance text-success">$</span> </p>
         </div>
       </div>
     </div>
