@@ -1,0 +1,12 @@
+.stretch {
+  display: block;
+  width: 100%;
+}
+
+#account-info {
+  display:none;
+}
+
+.page-header {
+  margin-bottom: 75px;
+}
